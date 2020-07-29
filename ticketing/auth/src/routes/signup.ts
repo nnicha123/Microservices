@@ -38,7 +38,7 @@ router.post(
         id: user.id,
         email: user.email,
       },
-      'earg'
+      process.env.JWT_KEY! //exclamation shows typescript we already defined it
     );
 
     // Store it on session object
